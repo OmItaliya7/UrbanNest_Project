@@ -73,29 +73,53 @@ export const projectsData = [
     
   ];
 
-  export const testimonialsData = [
-    {
-        name: "Donald Jackman",
-        title: "Marketing Manager",
-        image: profile_img_1,
-        alt: "Portrait of Donald Jackman",
-        rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
-    },
-    {
-        name: "Richard Nelson",
-        title: "UI/UX Designer",
-        image: profile_img_2,
-        alt: "Portrait of Richard Nelson",
-        rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
-    },
-    {
-        name: "James Washington",
-        title: "Co-Founder",
-        image: profile_img_3,
-        alt: "Portrait of James Washington",
-        rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
-    }
+//   export const testimonialsData = [
+//     {
+//         name: "Donald Jackman",
+//         title: "Marketing Manager",
+//         image: profile_img_1,
+//         alt: "Portrait of Donald Jackman",
+//         rating: 5,
+//         text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+//     },
+//     {
+//         name: "Richard Nelson",
+//         title: "UI/UX Designer",
+//         image: profile_img_2,
+//         alt: "Portrait of Richard Nelson",
+//         rating: 4,
+//         text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+//     },
+//     {
+//         name: "James Washington",
+//         title: "Co-Founder",
+//         image: profile_img_3,
+//         alt: "Portrait of James Washington",
+//         rating: 5,
+//         text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+//     }
+// ];
+
+export const testimonialsData = [
+{
+  name: "Donald Jackman",
+  title: "Home Buyer",
+  image: profile_img_1,
+  rating: 5,
+  text: "UrbanNest helped me find my dream apartment. The team was professional and guided me throughout the entire process."
+},
+{
+  name: "Richard Nelson",
+  title: "Property Investor",
+  image: profile_img_2,
+  rating: 4,
+  text: "Great experience working with UrbanNest. Their property listings are well curated and the buying process was smooth."
+},
+{
+  name: "James Washington",
+  title: "Business Owner",
+  image: profile_img_3,
+  rating: 5,
+  text: "I invested in a commercial property through UrbanNest and the experience was excellent."
+}
 ];
