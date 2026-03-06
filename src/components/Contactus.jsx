@@ -53,7 +53,7 @@ const Contactus = () =>{
         <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Contact <span className="underline font-normal ">With Us</span>
+              Contact <span className="underline underline-offset-4 decoration-1 font-light ">With Us</span>
             </h2>
             <p className="text-gray-500 mt-4 max-w-xl mx-auto">
               Have questions or want to learn more? Get in touch with us!

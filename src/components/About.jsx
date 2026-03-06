@@ -12,7 +12,7 @@ const About = () => {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold">
-            About <span className="underline font-normal">Our Brand</span>
+            About <span className="underline underline-offset-4 decoration-1 font-light">Our Brand</span>
           </h2>
 
           <p className="text-gray-500 mt-4 max-w-xl mx-auto">

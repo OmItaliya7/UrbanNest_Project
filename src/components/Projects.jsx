@@ -33,7 +33,7 @@ const prevSlide = () => {
         {/* Title */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-semibold">
-            Projects <span className="underline font-normal">Completed</span>
+            Projects <span className="underline underline-offset-4 decoration-1 font-light">Completed</span>
           </h2>
 
           <p className="text-gray-500 mt-4">
@@ -73,13 +73,13 @@ const prevSlide = () => {
 
               <div
                 key={i}
-                className="min-w-[300px] md:min-w-[320px] lg:min-w-[320px] relative"
+                className="min-w-75 md:min-w-[320px] lg:min-w-[320px] relative"
               >
 
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[380px] object-cover rounded-md"
+                  className="w-full h-95 object-cover rounded-md"
                 />
 
                 {/* Info Card */}
