@@ -7,10 +7,10 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 
-        {/* Top Footer */}
+        
         <div className="grid md:grid-cols-3 gap-10">
 
-          {/* Left Section */}
+         
           <div>
 
             <div className="flex items-center gap-2 mb-4">
@@ -25,7 +25,7 @@ const Footer = () => {
 
           </div>
 
-          {/* Company Links */}
+          
           <div>
 
             <h3 className="font-semibold text-lg mb-5">Quick Links</h3>
@@ -60,7 +60,7 @@ const Footer = () => {
 
           </div>
 
-          {/* Newsletter */}
+          
           <div>
 
             <h3 className="font-semibold mb-4 text-lg">
@@ -89,10 +89,10 @@ const Footer = () => {
 
         </div>
 
-        {/* Divider */}
+       
         <div className="border-t border-gray-700 my-8"></div>
 
-        {/* Bottom */}
+       
         <p className="text-center text-gray-400 text-sm">
           Copyright {new Date().getFullYear()} © UrbanNest. All Right Reserved.
         </p>

@@ -1,7 +1,6 @@
 import { projectsData, assets } from "../assets/assets";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { slideLeft } from "../animation/animation";
 
 const Projects = () => {
 
@@ -28,7 +27,11 @@ const prevSlide = () => {
   return (
     <section id="projects" className="py-20 bg-gray-50">
 
-      <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <motion.div 
+        initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{once: true}} className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 
         {/* Title */}
         <div className="text-center mb-10">

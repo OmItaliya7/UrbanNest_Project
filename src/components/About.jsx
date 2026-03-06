@@ -1,4 +1,3 @@
-import { slideLeft, slideRight } from "../animation/animation";
 import brandImg from "../assets/brand_img.png";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
@@ -7,7 +6,12 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-50">
 
-      <motion.div variants={slideRight} initial="hidden" whileInView="visible" viewport={{ once: true }} className="max-w-8xl mx-auto px-6 md:px-12 lg:px-20">
+      <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{once: true}}
+        className="max-w-8xl mx-auto px-6 md:px-12 lg:px-20">
 
         {/* Title */}
         <div className="text-center mb-16">

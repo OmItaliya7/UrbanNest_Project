@@ -1,4 +1,4 @@
-import { slideRight } from "../animation/animation";
+
 import { testimonialsData } from "../assets/assets";
 import { assets } from "../assets/assets";
 import { motion } from "framer-motion";
@@ -7,9 +7,13 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
 
-      <motion.div variants={slideRight} initial="hidden" whileInView="visible" viewport={{ once: true }} className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <motion.div 
+       initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{once: true}} className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 
-        {/* Title */}
+        
         <div className="text-center mb-16">
 
           <h2 className="text-3xl md:text-4xl font-semibold">
@@ -22,7 +26,7 @@ const Testimonials = () => {
 
         </div>
 
-        {/* Cards */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {testimonialsData.map((testimonial, index) => (
@@ -32,24 +36,24 @@ const Testimonials = () => {
               className="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-lg transition"
             >
 
-              {/* Profile Image */}
+             
               <img
                 src={testimonial.image}
                 alt={testimonial.alt}
                 className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
               />
 
-              {/* Name */}
+              
               <h3 className="text-lg font-semibold text-gray-900">
                 {testimonial.name}
               </h3>
 
-              {/* Title */}
+              
               <p className="text-gray-500 text-sm mb-3">
                 {testimonial.title}
               </p>
 
-              {/* Rating */}
+              
               <div className="flex justify-center mb-4">
 
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -63,7 +67,7 @@ const Testimonials = () => {
 
               </div>
 
-              {/* Text */}
+             
               <p className="text-gray-600 text-sm leading-relaxed">
                 {testimonial.text}
               </p>

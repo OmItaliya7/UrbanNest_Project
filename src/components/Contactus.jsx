@@ -1,7 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-import { slideLeft } from "../animation/animation";
 import { motion } from "framer-motion";
 
 
@@ -50,7 +49,10 @@ const Contactus = () =>{
 
     return (
       <section id="contactus" className="py-20 bg-gray-50">
-        <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+        <motion.div initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold">
               Contact <span className="underline underline-offset-4 decoration-1 font-light ">With Us</span>
