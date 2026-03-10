@@ -1,24 +1,22 @@
 import { ContactForm } from "../types/contact"
 
 export const validateContactForm = (data: ContactForm): string | null => {
-  const { name, email, message } = data
+  const name = data.name.trim();
+  const email = data.email.trim();
+  const message = data.message.trim();
 
-  const trimmedName = name.trim()
-  const trimmedEmail = email.trim()
-  const trimmedMessage = message.trim()
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
-  if (trimmedName.length < 3) {
+  if (name.length < 3) {
     return "Name must be at least 3 characters"
   }
 
-  if (!emailRegex.test(trimmedEmail)) {
+  if (!emailRegex.test(email)) {
     return "Please enter a valid email"
   }
 
-  if (trimmedMessage.length < 10) {
+  if (message.length < 10) {
     return "Message must be at least 10 characters"
   }
 

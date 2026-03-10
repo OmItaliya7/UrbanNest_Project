@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback, use } from "react";
 import toast from "react-hot-toast";
 import { validateContactForm } from "../utils/validateContactForm";
 import { sendEmail } from "../services/emailService";
@@ -13,14 +13,18 @@ export const useContactForm = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
+  const handleChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    },
+    []
+  );
+
+//   handle form submission
 
   const handleSubmit = async (form: HTMLFormElement) => {
     if (loading) return;
