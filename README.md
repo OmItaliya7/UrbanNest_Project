@@ -47,57 +47,83 @@ The goal of this project was to practice building a **scalable frontend architec
 ## Folder Structure
 
 ```
-UrbanNest
-│
-├── public
-│   └── header_img.webp
-│
-├── src
-│   ├── assets
-│   │   └── images
-│   │
-│   ├── components
-│   │   ├── common
-│   │   │   Button.tsx
-│   │   │   Input.tsx
-│   │   │   Container.tsx
-│   │   │   Section.tsx
-│   │   │   SectionTitle.tsx
-│   │   │
-│   │   └── UI
-│   │       Loader.tsx
-│   │
-│   ├── data
-│   │   projects.ts
-│   │   testimonials.ts
-│   │
-│   ├── layout
-│   │   AppLayout.tsx
-│   │   Header.tsx
-│   │   Footer.tsx
-│   │
-│   ├── pages
-│   │   Home.tsx
-│   │   About.tsx
-│   │   Projects.tsx
-│   │   Testimonials.tsx
-│   │   Contact.tsx
-│   │   ErrorPage.tsx
-│   │
-│   ├── utils
-│   │   animation.ts
-│   │   validateContactForm.ts
-│   │
-│   ├── types
-│   │   images.d.ts
-│   │
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
-│
-├── index.html
-├── package.json
-└── vite.config.js
+UrbanNest/ 
+├─ .env
+├─ .git/
+├─ .gitignore
+├─ dist/
+├─ node_modules/
+├─ public/
+│  ├─ favicon.svg
+│  └─ header_img.webp
+├─ src/
+│  ├─ App.tsx
+│  ├─ index.css
+│  ├─ main.tsx
+│  ├─ vite-env.d.ts
+│  ├─ assets/
+│  │  └─ images/
+│  │     ├─ common/
+│  │     │  ├─ brand_img.webp
+│  │     │  ├─ Logo.webp
+│  │     │  └─ Logo_White.webp
+│  │     ├─ projects/
+│  │     │  ├─ project_img_1.webp
+│  │     │  ├─ project_img_2.webp
+│  │     │  ├─ project_img_3.webp
+│  │     │  ├─ project_img_4.webp
+│  │     │  ├─ project_img_5.webp
+│  │     │  └─ project_img_6.webp
+│  │     └─ testimonials/
+│  │        ├─ profile_img_1.webp
+│  │        ├─ profile_img_2.webp
+│  │        ├─ profile_img_3.webp
+│  │        └─ star_icon.webp
+│  ├─ components/
+│  │  ├─ common/
+│  │  │  ├─ Button.tsx
+│  │  │  ├─ Container.tsx
+│  │  │  ├─ Input.tsx
+│  │  │  ├─ Section.tsx
+│  │  │  └─ SectionTitle.tsx
+│  │  ├─ sections/
+│  │  │  └─ Hero.tsx
+│  │  └─ ui/
+│  │     └─ Loader.tsx
+│  ├─ data/
+│  │  ├─ navigation.ts
+│  │  ├─ projects.ts
+│  │  └─ testimonials.ts
+│  ├─ hooks/
+│  │  └─ useContactForm.ts
+│  ├─ layout/
+│  │  ├─ AppLayout.tsx
+│  │  ├─ Footer.tsx
+│  │  └─ Header.tsx
+│  ├─ pages/
+│  │  ├─ About.tsx
+│  │  ├─ Contact.tsx
+│  │  ├─ ErrorPage.tsx
+│  │  ├─ Home.tsx
+│  │  ├─ Projects.tsx
+│  │  └─ Testimonials.tsx
+│  ├─ services/
+│  │  └─ emailService.ts
+│  ├─ types/
+│  │  ├─ contact.ts
+│  │  └─ images.d.ts
+│  └─ utils/
+│     ├─ animation.ts
+│     └─ validateContactForm.ts
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ tailwind.config.js
+├─ tsconfig.json
+├─ vercel.json
+└─ vite.config.js
 ```
 
 ---
@@ -150,7 +176,7 @@ Deployment steps:
 Live Demo
 
 ```
-https://urban-nest-project.vercel.app/
+https://urbanest-project.vercel.app/
 ```
 
 ---
